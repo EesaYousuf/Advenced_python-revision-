@@ -13,3 +13,18 @@ def fibonacci(n):
     return value
 
 print([fibonacci(i) for i in range(15)])
+# Functions and 
+# Map, Filter, Reduce example
+from functools import reduce
+
+nums = [5, 10, 15, 20, 25]
+
+squared = list(map(lambda x: x**2, nums))
+even = list(filter(lambda x: x % 2 == 0, nums))
+sum_all = reduce(lambda a, b: a + b, nums)
+
+print("Squared:", squared)
+print("Even:", even)
+print("Sum:", sum_all)
+
+
