@@ -7,4 +7,11 @@ class Car:
 car1 = Car("Toyota", "Corolla")
 print(car1.brand)   # Toyota
 print(car1.model)   # Corolla
-                        
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name      # Attribute
+        self.age = age
+
+    def greet(self):          # Method
+        return f"Hello, my name is {self.name}."
