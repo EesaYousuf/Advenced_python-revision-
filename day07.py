@@ -6,4 +6,9 @@ print(add(3, 5))
 # Map
 nums = [1, 2, 3, 4]
 doubled = list(map(lambda x: x*2, nums))
+# Reduce (cumulative)
+product = reduce(lambda a, b: a*b, nums)
+
+print(doubled, evens, product)
+
 
